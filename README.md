@@ -38,8 +38,18 @@ npm install
 * [babel](https://github.com/rollup/rollup-starter-lib/tree/babel) — illustrates writing the source code in ES2015 and transpiling it for older environments with [Babel](https://babeljs.io/)
 * [buble](https://github.com/rollup/rollup-starter-lib/tree/buble) — similar, but using [Bublé](https://buble.surge.sh/) which is a faster alternative with less configuration
 
-
-
+## Testing locally
+* Clone this repo `git clone git@github.com:adyz/rollup-starter-lib-typescipt.git`
+* Install dependencies `npm install`
+* Build your modules `npm run build`
+* Copy the path to this repo `pwd`
+* Create a new project (or use and existent one) 
+* Install the new build modules using local modules using something like `npm install file://Desktop/rollup-starter-lib --save-dev` with the path to your lib
+* Import the module
+```js
+import test from 'rollup-starter-lib';
+console.log('Tile left:', test(2, 2));
+```
 ## License
 
 [MIT](LICENSE).
